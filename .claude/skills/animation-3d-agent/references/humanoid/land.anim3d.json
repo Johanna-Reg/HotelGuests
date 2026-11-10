@@ -1,0 +1,53 @@
+{
+  "$schemaVersion": 1,
+  "rig": "humanoid.rig3d.json",
+  "fps": 30,
+  "length": 22,
+  "loop": false,
+  "mirror": { "from": "L", "offset": 0 },
+  "footLock": true,
+  "tracks": {
+    "hips": {
+      "pitch": [[0, 2, "outQuad"], [3, 12, "inOutSine"], [10, 5, "inOutSine"], [22, 0]],
+      "my": [[0, 0, "outQuad"], [3, -0.2, "inOutSine"], [10, -0.07, "inOutSine"], [22, -0.012]]
+    },
+    "spine": {
+      "pitch": [[0, 2, "outQuad"], [4, 24, "inOutSine"], [11, 8, "inOutSine"], [22, 3]]
+    },
+    "chest": {
+      "pitch": [[0, 0, "outQuad"], [4, 8, "inOutSine"], [22, 5]]
+    },
+    "neck": {
+      "pitch": [[0, 0, "outQuad"], [4, -6, "inOutSine"], [22, -3]]
+    },
+    "head": {
+      "pitch": [[0, 8, "outQuad"], [4, -14, "inOutSine"], [12, -6, "inOutSine"], [22, -1]]
+    },
+    "upperArm.L": {
+      "pitch": [[0, 35, "outQuad"], [4, 30, "inOutSine"], [22, 4]],
+      "roll": [[0, 40, "outQuad"], [4, 28, "inOutSine"], [22, 12]]
+    },
+    "lowerArm.L": {
+      "bend": [[0, 25, "outQuad"], [4, 45, "inOutSine"], [22, 22]]
+    },
+    "hand.L": {
+      "pitch": [[0, 0, "inOutSine"], [5, 12, "inOutSine"], [22, 6, "inOutSine"]]
+    },
+    "upperLeg.L": {
+      "pitch": [[0, 2.88, "outQuad"], [3, 52.37, "inOutSine"], [10, 28.56, "inOutSine"], [22, 9.7]]
+    },
+    "lowerLeg.L": {
+      "bend": [[0, 1.77, "outQuad"], [3, 80.74, "inOutSine"], [10, 47.11, "inOutSine"], [22, 19.39]]
+    },
+    "foot.L": {
+      "pitch": [[0, 0.88, "outQuad"], [3, 40.37, "inOutSine"], [10, 23.56, "inOutSine"], [22, 9.7]]
+    }
+  },
+  "planted": {
+    "foot.L": [[0, 22]],
+    "foot.R": [[0, 22]]
+  },
+  "events": [
+    [0, "land"]
+  ]
+}

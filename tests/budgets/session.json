@@ -1,0 +1,5 @@
+{
+  "scene": "scenes/main.scene.json",
+  "replay": "tests/replays/a_short_session_pops_three_bubbles.greplay",
+  "structural": { "drawCallsMax": 8, "pipelinesCreatedDuringPlay": 0, "gcPausesOver4msMax": 0, "jsAllocatedMBMax": 20 }
+}

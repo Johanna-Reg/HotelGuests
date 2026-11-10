@@ -1,0 +1,49 @@
+{
+  "$schemaVersion": 1,
+  "rig": "humanoid.rig3d.json",
+  "fps": 30,
+  "length": 24,
+  "loop": true,
+  "mirror": { "from": "L", "offset": 12 },
+  "tracks": {
+    "hips": {
+      "pitch": [[0, -4, "inOutSine"], [12, -2, "inOutSine"], [24, -4, "inOutSine"]],
+      "my": [[0, 0]]
+    },
+    "spine": {
+      "pitch": [[0, -4, "inOutSine"], [12, -6, "inOutSine"], [24, -4, "inOutSine"]]
+    },
+    "chest": {
+      "pitch": [[0, -3]],
+      "roll": [[0, 2, "inOutSine"], [12, -2, "inOutSine"], [24, 2, "inOutSine"]]
+    },
+    "head": {
+      "pitch": [[0, 10, "inOutSine"], [12, 6, "inOutSine"], [24, 10, "inOutSine"]]
+    },
+    "upperArm.L": {
+      "pitch": [[0, 25, "inOutSine"], [12, 10, "inOutSine"], [24, 25, "inOutSine"]],
+      "roll": [[0, 62, "inOutSine"], [12, 50, "inOutSine"], [24, 62, "inOutSine"]]
+    },
+    "lowerArm.L": {
+      "bend": [[0, 30, "inOutSine"], [12, 45, "inOutSine"], [24, 30, "inOutSine"]]
+    },
+    "hand.L": {
+      "pitch": [[0, -10, "inOutSine"], [12, 5, "inOutSine"], [24, -10, "inOutSine"]]
+    },
+    "upperLeg.L": {
+      "pitch": [[0, 30, "inOutSine"], [12, 8, "inOutSine"], [24, 30, "inOutSine"]]
+    },
+    "lowerLeg.L": {
+      "bend": [[0, 50, "inOutSine"], [12, 25, "inOutSine"], [24, 50, "inOutSine"]]
+    },
+    "foot.L": {
+      "pitch": [[0, -20, "inOutSine"], [12, -12, "inOutSine"], [24, -20, "inOutSine"]]
+    }
+  },
+  "planted": {
+    "foot.L": [],
+    "foot.R": [],
+    "toe.L": [],
+    "toe.R": []
+  }
+}

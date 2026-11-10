@@ -1,0 +1,59 @@
+{
+ "compat": [
+  {
+   "r": "2d",
+   "key": {
+    "Blit": {
+     "format": 22
+    }
+   }
+  },
+  {
+   "r": "2d",
+   "key": {
+    "Shape": {
+     "samples": 1,
+     "format": 22
+    }
+   }
+  }
+ ],
+ "desktop": [
+  {
+   "r": "2d",
+   "key": {
+    "Blit": {
+     "format": 22
+    }
+   }
+  },
+  {
+   "r": "2d",
+   "key": {
+    "Shape": {
+     "samples": 4,
+     "format": 40
+    }
+   }
+  }
+ ],
+ "mobile": [
+  {
+   "r": "2d",
+   "key": {
+    "Blit": {
+     "format": 22
+    }
+   }
+  },
+  {
+   "r": "2d",
+   "key": {
+    "Shape": {
+     "samples": 1,
+     "format": 22
+    }
+   }
+  }
+ ]
+}

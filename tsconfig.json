@@ -1,0 +1,8 @@
+{
+  "extends": "./.gameengine/tsconfig.engine.json",
+  "include": [
+    "src",
+    "schema",
+    "tests"
+  ]
+}

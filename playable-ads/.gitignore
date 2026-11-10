@@ -1,0 +1,3 @@
+# `gameengine playable export-assets` / `build` output.
+*/dist/
+*/.gameengine/

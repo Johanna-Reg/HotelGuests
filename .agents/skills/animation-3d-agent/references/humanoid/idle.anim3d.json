@@ -1,0 +1,78 @@
+{
+  "$schemaVersion": 1,
+  "rig": "humanoid.rig3d.json",
+  "fps": 30,
+  "length": 90,
+  "loop": true,
+  "footLock": true,
+  "tracks": {
+    "hips": {
+      "yaw": [[0, -2, "inOutSine"], [45, 1, "inOutSine"], [90, -2, "inOutSine"]],
+      "roll": [[0, 0, "inOutSine"], [45, 1.6, "inOutSine"], [90, 0, "inOutSine"]],
+      "mx": [[0, 0, "inOutSine"], [45, 0.018, "inOutSine"], [90, 0, "inOutSine"]],
+      "my": [[0, -0.012, "inOutSine"], [45, -0.02, "inOutSine"], [90, -0.012, "inOutSine"]]
+    },
+    "spine": {
+      "pitch": [[0, 3, "inOutSine"], [50, 1.5, "inOutSine"], [90, 3, "inOutSine"]]
+    },
+    "chest": {
+      "pitch": [[0, 5, "inOutSine"], [52, 2.2, "inOutSine"], [90, 5, "inOutSine"]],
+      "roll": [[0, 0, "inOutSine"], [50, -1.2, "inOutSine"], [90, 0, "inOutSine"]]
+    },
+    "neck": {
+      "pitch": [[0, -3, "inOutSine"], [55, -2.4, "inOutSine"], [90, -3, "inOutSine"]]
+    },
+    "head": {
+      "pitch": [[0, -1, "inOutSine"], [56, 0, "inOutSine"], [90, -1, "inOutSine"]],
+      "yaw": [[0, 0, "inOutSine"], [30, 4, "inOutSine"], [70, -2, "inOutSine"], [90, 0, "inOutSine"]]
+    },
+    "shoulder.L": {
+      "roll": [[0, 0, "inOutSine"], [50, 1.8, "inOutSine"], [90, 0, "inOutSine"]]
+    },
+    "upperArm.L": {
+      "pitch": [[0, 4, "inOutSine"], [48, 2, "inOutSine"], [90, 4, "inOutSine"]],
+      "roll": [[0, 12, "inOutSine"], [52, 13.5, "inOutSine"], [90, 12, "inOutSine"]]
+    },
+    "lowerArm.L": {
+      "bend": [[0, 22, "inOutSine"], [54, 26, "inOutSine"], [90, 22, "inOutSine"]]
+    },
+    "hand.L": {
+      "pitch": [[0, 6, "inOutSine"], [56, 9, "inOutSine"], [90, 6, "inOutSine"]]
+    },
+    "shoulder.R": {
+      "roll": [[0, 0, "inOutSine"], [56, 1.8, "inOutSine"], [90, 0, "inOutSine"]]
+    },
+    "upperArm.R": {
+      "pitch": [[0, 4, "inOutSine"], [54, 2, "inOutSine"], [90, 4, "inOutSine"]],
+      "roll": [[0, 12, "inOutSine"], [58, 12.5, "inOutSine"], [90, 12, "inOutSine"]]
+    },
+    "lowerArm.R": {
+      "bend": [[0, 22, "inOutSine"], [60, 20, "inOutSine"], [90, 22, "inOutSine"]]
+    },
+    "hand.R": {
+      "pitch": [[0, 6, "inOutSine"], [62, 9, "inOutSine"], [90, 6, "inOutSine"]]
+    },
+    "upperLeg.L": {
+      "pitch": [[0, 9.7], [90, 9.7]]
+    },
+    "lowerLeg.L": {
+      "bend": [[0, 19.39], [90, 19.39]]
+    },
+    "foot.L": {
+      "pitch": [[0, 9.7], [90, 9.7]]
+    },
+    "upperLeg.R": {
+      "pitch": [[0, 9.7], [90, 9.7]]
+    },
+    "lowerLeg.R": {
+      "bend": [[0, 19.39], [90, 19.39]]
+    },
+    "foot.R": {
+      "pitch": [[0, 9.7], [90, 9.7]]
+    }
+  },
+  "planted": {
+    "foot.L": [[0, 90]],
+    "foot.R": [[0, 90]]
+  }
+}

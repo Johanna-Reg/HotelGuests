@@ -1,0 +1,15 @@
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "if command -v gameengine >/dev/null 2>&1; then gameengine skills update --auto || true; elif [ -f \"$CLAUDE_PROJECT_DIR/.gameengine/engine/tools/cli/bin/gameengine.mjs\" ]; then node \"$CLAUDE_PROJECT_DIR/.gameengine/engine/tools/cli/bin/gameengine.mjs\" skills update --auto || true; echo 'note: gameengine is not on PATH (skills were updated through .gameengine/engine); fix: node .gameengine/engine/tools/cli/bin/gameengine.mjs setup --path'; else echo 'warning: gameengine is not on PATH (skills not updated, gameengine commands will fail); fix: in the engine checkout run: node tools/cli/bin/gameengine.mjs setup --path'; fi",
+            "timeout": 60
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,12 @@
+guid = "7c92549d-b5d2-4600-ba9f-87490aac05e8"
+importer = "mesh"
+
+[settings]
+lods = 2
+max_texture_size = 512
+scale = 10.0
+textures = "none"
+
+[settings.materials."Elric_RIG_psh:Elric_Mat"]
+program = "materials/facility-flat.material.ts"
+params = { baseColorMap = "textures/Image_0.png", shadowStrength = 0.0 }

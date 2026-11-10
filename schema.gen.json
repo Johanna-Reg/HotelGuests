@@ -1,0 +1,52 @@
+{
+  "version": 1,
+  "package": "EIGuests",
+  "enums": [],
+  "types": [
+    {
+      "name": "Bubble",
+      "kind": "component",
+      "sim": true,
+      "fields": [
+        {
+          "name": "radius",
+          "kind": "f32",
+          "scalar": "f32",
+          "lanes": 1
+        },
+        {
+          "name": "speed",
+          "kind": "f32",
+          "scalar": "f32",
+          "lanes": 1,
+          "doc": "Units per step"
+        }
+      ],
+      "package": "EIGuests"
+    },
+    {
+      "name": "Game",
+      "kind": "resource",
+      "sim": true,
+      "fields": [
+        {
+          "name": "score",
+          "kind": "u32",
+          "scalar": "u32",
+          "lanes": 1,
+          "doc": "Bubbles popped"
+        },
+        {
+          "name": "spawned",
+          "kind": "u32",
+          "scalar": "u32",
+          "lanes": 1
+        }
+      ],
+      "package": "EIGuests"
+    }
+  ],
+  "commands": [],
+  "protocol": [],
+  "services": []
+}

@@ -1,0 +1,29 @@
+{
+  "$schemaVersion": 1,
+  "model": "../models/elric/Elricv2.fbx",
+  "joints": {
+    "hips": { "joint": "Elric_RIG_psh:Root_M", "role": "hips", "axes": { "pitch": "z", "yaw": "x", "roll": "y" } },
+    "spine": { "joint": "Elric_RIG_psh:Spine1_M", "role": "spine", "axes": { "pitch": "z", "yaw": "x", "roll": "y" } },
+    "hip.R": { "joint": "Elric_RIG_psh:Hip_R", "role": "hip", "mirror": "hip.L", "axes": { "pitch": "z", "yaw": "x", "roll": "-y" } },
+    "hip.L": { "joint": "Elric_RIG_psh:Hip_L", "role": "hip", "mirror": "hip.R", "axes": { "pitch": "z", "yaw": "x", "roll": "-y" } },
+    "chest": { "joint": "Elric_RIG_psh:Chest_M", "role": "chest", "axes": { "pitch": "z", "yaw": "x", "roll": "y" } },
+    "lowerLeg.R": { "joint": "Elric_RIG_psh:Knee_R", "role": "lowerLeg", "mirror": "lowerLeg.L", "axes": { "bend": "-z" }, "limits": { "bend": [0, 160] } },
+    "lowerLeg.L": { "joint": "Elric_RIG_psh:Knee_L", "role": "lowerLeg", "mirror": "lowerLeg.R", "axes": { "bend": "-z" }, "limits": { "bend": [0, 160] } },
+    "neck": { "joint": "Elric_RIG_psh:Neck_M", "role": "neck", "axes": { "pitch": "z", "yaw": "x", "roll": "y" } },
+    "scapula.R": { "joint": "Elric_RIG_psh:Scapula_R", "role": "scapula", "mirror": "scapula.L", "axes": { "pitch": "-x", "yaw": "-z", "roll": "-y" } },
+    "scapula.L": { "joint": "Elric_RIG_psh:Scapula_L", "role": "scapula", "mirror": "scapula.R", "axes": { "pitch": "-x", "yaw": "-z", "roll": "-y" } },
+    "foot.R": { "joint": "Elric_RIG_psh:Ankle_R", "role": "foot", "mirror": "foot.L", "axes": { "pitch": "z", "yaw": "x", "roll": "-y" } },
+    "foot.L": { "joint": "Elric_RIG_psh:Ankle_L", "role": "foot", "mirror": "foot.R", "axes": { "pitch": "z", "yaw": "x", "roll": "-y" } },
+    "head": { "joint": "Elric_RIG_psh:Head_M", "role": "head", "axes": { "pitch": "z", "yaw": "x", "roll": "y" } },
+    "shoulder.R": { "joint": "Elric_RIG_psh:Shoulder_R", "role": "shoulder", "mirror": "shoulder.L", "axes": { "pitch": "z", "yaw": "x", "roll": "-y" } },
+    "shoulder.L": { "joint": "Elric_RIG_psh:Shoulder_L", "role": "shoulder", "mirror": "shoulder.R", "axes": { "pitch": "z", "yaw": "x", "roll": "-y" } },
+    "toe.R": { "joint": "Elric_RIG_psh:Toes_R", "role": "toe", "mirror": "toe.L", "axes": { "pitch": "z", "yaw": "-y", "roll": "-x" } },
+    "toe.L": { "joint": "Elric_RIG_psh:Toes_L", "role": "toe", "mirror": "toe.R", "axes": { "pitch": "z", "yaw": "-y", "roll": "-x" } },
+    "lowerArm.R": { "joint": "Elric_RIG_psh:Elbow_R", "role": "lowerArm", "mirror": "lowerArm.L", "axes": { "bend": "z" }, "limits": { "bend": [0, 150] } },
+    "lowerArm.L": { "joint": "Elric_RIG_psh:Elbow_L", "role": "lowerArm", "mirror": "lowerArm.R", "axes": { "bend": "z" }, "limits": { "bend": [0, 150] } },
+    "hand.R": { "joint": "Elric_RIG_psh:Wrist_R", "role": "hand", "mirror": "hand.L", "axes": { "pitch": "z", "yaw": "x", "roll": "-y" } },
+    "hand.L": { "joint": "Elric_RIG_psh:Wrist_L", "role": "hand", "mirror": "hand.R", "axes": { "pitch": "z", "yaw": "x", "roll": "-y" } }
+  },
+  "controls": {},
+  "contacts": ["foot.L", "foot.R", "toe.L", "toe.R"]
+}

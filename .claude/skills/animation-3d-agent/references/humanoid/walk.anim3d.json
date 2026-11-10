@@ -1,0 +1,65 @@
+{
+  "$schemaVersion": 1,
+  "rig": "humanoid.rig3d.json",
+  "fps": 30,
+  "length": 32,
+  "loop": true,
+  "speed": 1.125,
+  "mirror": { "from": "L", "offset": 16 },
+  "footLock": true,
+  "tracks": {
+    "hips": {
+      "yaw": [[0, -3.5, "inOutSine"], [16, 3.5, "inOutSine"], [32, -3.5]],
+      "roll": [[0, 0, "inOutSine"], [6, -3, "inOutSine"], [16, 0, "inOutSine"], [22, 3, "inOutSine"], [32, 0]],
+      "mx": [[0, 0, "inOutSine"], [8, 0.02, "inOutSine"], [16, 0, "inOutSine"], [24, -0.02, "inOutSine"], [32, 0]],
+      "my": [[0, -0.045, "inOutSine"], [4, -0.068, "inOutSine"], [10, -0.015, "inOutSine"], [16, -0.045, "inOutSine"], [20, -0.068, "inOutSine"], [26, -0.015, "inOutSine"], [32, -0.045]]
+    },
+    "spine": {
+      "pitch": [[0, 5, "inOutSine"], [4, 6, "inOutSine"], [10, 4, "inOutSine"], [16, 5, "inOutSine"], [20, 6, "inOutSine"], [26, 4, "inOutSine"], [32, 5, "inOutSine"]],
+      "yaw": [[0, 3, "inOutSine"], [16, -3, "inOutSine"], [32, 3, "inOutSine"]]
+    },
+    "chest": {
+      "pitch": [[0, 6, "inOutSine"], [5, 7, "inOutSine"], [11, 5.5, "inOutSine"], [16, 6, "inOutSine"], [21, 7, "inOutSine"], [27, 5.5, "inOutSine"], [32, 6, "inOutSine"]],
+      "yaw": [[0, 6.6, "inOutSine"], [2, 7, "inOutSine"], [18, -7, "inOutSine"], [32, 6.6, "inOutSine"]]
+    },
+    "neck": {
+      "pitch": [[0, -5, "inOutSine"], [6, -6, "inOutSine"], [12, -4.5, "inOutSine"], [16, -5, "inOutSine"], [22, -6, "inOutSine"], [28, -4.5, "inOutSine"], [32, -5, "inOutSine"]]
+    },
+    "head": {
+      "pitch": [[0, -1, "inOutSine"], [6, -1.5, "inOutSine"], [12, -0.5, "inOutSine"], [16, -1, "inOutSine"], [22, -1.5, "inOutSine"], [28, -0.5, "inOutSine"], [32, -1, "inOutSine"]],
+      "yaw": [[0, -2, "inOutSine"], [16, 2, "inOutSine"], [32, -2, "inOutSine"]]
+    },
+    "upperArm.L": {
+      "pitch": [[0, -10, "inOutSine"], [2, -12, "inOutSine"], [18, 14, "inOutSine"], [32, -10, "inOutSine"]],
+      "yaw": [[0, 2, "inOutSine"], [2, 3, "inOutSine"], [18, -12, "inOutSine"], [32, 2, "inOutSine"]],
+      "roll": [[0, 13, "inOutSine"], [2, 13.5, "inOutSine"], [18, 11, "inOutSine"], [32, 13, "inOutSine"]]
+    },
+    "lowerArm.L": {
+      "bend": [[0, 22, "inOutSine"], [2, 20, "inOutSine"], [18, 38, "inOutSine"], [32, 22, "inOutSine"]]
+    },
+    "hand.L": {
+      "pitch": [[0, 6, "inOutSine"], [4, 4, "inOutSine"], [20, 18, "inOutSine"], [32, 6, "inOutSine"]]
+    },
+    "upperLeg.L": {
+      "pitch": [[0, 20.48, "outQuad"], [4, 32.21, "inOutSine"], [8, 15.98, "inOutSine"], [11, 2.1, "linear"], [12, -0.31, "linear"], [13, -1.66, "linear"], [14, -2.84, "linear"], [15, -4.41, "linear"], [16, -6.57, "linear"], [17, -8.17, "linear"], [18, -8.67, "linear"], [19, -9.19, "linear"], [20, -10.39, "outQuad"], [23, 9, "inOutSine"], [26, 33.49, "inOutSine"], [29, 35.29, "outQuad"], [32, 20.48, "linear"]],
+      "roll": [[0, 0.56, "outQuad"], [4, 1.4, "inOutSine"], [8, 0.72, "inOutSine"], [11, 0.16, "linear"], [12, 0.12, "linear"], [13, 0.15, "linear"], [14, 0.25, "linear"], [15, 0.39, "linear"], [16, 0.53, "linear"], [17, 0.49, "linear"], [18, 0.16, "linear"], [19, -0.36, "linear"], [20, -0.91, "outQuad"], [23, -2.06, "inOutSine"], [26, -1.91, "inOutSine"], [29, -0.14, "outQuad"], [32, 0.56, "linear"]]
+    },
+    "lowerLeg.L": {
+      "bend": [[0, 0, "outQuad"], [4, 42.82, "inOutSine"], [8, 31.95, "inOutSine"], [11, 19.45, "linear"], [12, 19.71, "linear"], [13, 22.08, "linear"], [14, 24.79, "linear"], [15, 26.64, "linear"], [16, 27.04, "linear"], [17, 28.46, "linear"], [18, 32.06, "linear"], [19, 35.28, "linear"], [20, 36.4, "outQuad"], [23, 69.17, "inOutSine"], [26, 74.24, "inOutSine"], [29, 40.46, "outQuad"], [32, 0, "linear"]]
+    },
+    "foot.L": {
+      "pitch": [[0, -4.48, "outQuad"], [4, 10.61, "inOutSine"], [8, 15.98, "inOutSine"], [11, 17.35, "linear"], [12, 19.5, "linear"], [13, 21.67, "linear"], [14, 22.97, "linear"], [15, 22.75, "linear"], [16, 20.65, "linear"], [17, 17.96, "linear"], [18, 15.32, "linear"], [19, 11.29, "linear"], [20, 4.79, "outQuad"], [23, 20.17, "inOutSine"], [26, 28.74, "inOutSine"], [29, 11.16, "outQuad"], [32, -4.48, "linear"]],
+      "yaw": [[0, 3.5, "outQuad"], [4, 2.47, "inOutSine"], [8, 0, "inOutSine"], [11, -1.94, "linear"], [12, -2.47, "linear"], [13, -2.91, "linear"], [14, -3.23, "linear"], [15, -3.43, "linear"], [16, -3.5, "linear"], [17, -3.43, "linear"], [18, -3.23, "linear"], [19, -2.91, "linear"], [20, -2.47, "outQuad"], [23, -0.68, "inOutSine"], [26, 1.34, "inOutSine"], [29, 2.91, "outQuad"], [32, 3.5, "linear"]],
+      "roll": [[0, -0.56, "outQuad"], [4, 0.85, "inOutSine"], [8, 1.99, "inOutSine"], [11, 1.34, "linear"], [12, 0.92, "linear"], [13, 0.47, "linear"], [14, 0.04, "linear"], [15, -0.31, "linear"], [16, -0.53, "linear"], [17, -0.69, "linear"], [18, -0.91, "linear"], [19, -1.14, "linear"], [20, -1.34, "outQuad"], [23, -0.87, "inOutSine"], [26, -0.06, "inOutSine"], [29, -0.48, "outQuad"], [32, -0.56, "linear"]]
+    },
+    "toe.L": {
+      "pitch": [[0, 0, "inOutSine"], [11, 0, "linear"], [12, 0.52, "linear"], [13, 2.07, "linear"], [14, 4.67, "linear"], [15, 8.3, "linear"], [16, 12.96, "linear"], [17, 18.67, "linear"], [18, 25.41, "linear"], [19, 33.19, "linear"], [20, 42, "linear"], [25, 0, "inOutSine"]]
+    }
+  },
+  "planted": {
+    "foot.L": [[0, 11]],
+    "foot.R": [[16, 27]],
+    "toe.L": [[5, 20]],
+    "toe.R": [[0, 4], [21, 32]]
+  }
+}

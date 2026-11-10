@@ -1,0 +1,7 @@
+{
+  "$schemaVersion": 2,
+  "id": "main",
+  "entities": [
+    { "name": "Camera", "id": "camera", "Camera": { "clearColor": "#1a2138ff" }, "LocalTransform": {} }
+  ]
+}

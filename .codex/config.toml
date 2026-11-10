@@ -1,0 +1,10 @@
+# Installed by `gameengine skills update` (the engine's templates/_shared), which merges it table by
+# table: your own keys and tables stay. Codex reads it once the project is trusted. `.gameengine/engine` links to the engine checkout (`gameengine new` and
+# `skills update` make it), so this works without `gameengine` on PATH, and `node` is a real
+# executable on every OS (a `gameengine.cmd` launcher is not spawnable without a shell on Windows).
+[mcp_servers.gameengine]
+command = "node"
+args = [".gameengine/engine/tools/cli/bin/gameengine.mjs", "mcp"]
+# `test`, `check` and cooks run up to the server's own 10-minute limit (LONG_TIMEOUT_MS in
+# tools/cli/src/mcp.ts), which stops their hosts and reports; Codex's 60 s default would cut them off first.
+tool_timeout_sec = 660

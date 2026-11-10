@@ -1,0 +1,57 @@
+{
+  "$schemaVersion": 1,
+  "rig": "humanoid.rig3d.json",
+  "fps": 30,
+  "length": 44,
+  "loop": false,
+  "mirror": { "from": "L", "offset": 0 },
+  "footLock": true,
+  "tracks": {
+    "hips": {
+      "pitch": [[0, 0, "inOutSine"], [8, 16, "inQuad"], [11, -2, "outQuad"], [19, 4, "inOutSine"], [29, 2, "outQuad"], [32, 10, "inOutSine"], [44, 0]],
+      "my": [[0, -0.012, "inOutSine"], [8, -0.3, "inQuad"], [11, 0.06, "outQuad"], [19, 0.42, "inQuad"], [27, 0.05, "linear"], [29, 0, "outQuad"], [32, -0.17, "inOutSine"], [44, -0.012]]
+    },
+    "spine": {
+      "pitch": [[0, 3, "inOutSine"], [8, 26, "inQuad"], [11, -6, "outQuad"], [19, 6, "inOutSine"], [29, 4, "outQuad"], [32, 20, "inOutSine"], [44, 3]]
+    },
+    "chest": {
+      "pitch": [[0, 5, "inOutSine"], [8, 12, "inQuad"], [11, -4, "outQuad"], [19, 4, "inOutSine"], [29, 2, "outQuad"], [32, 10, "inOutSine"], [44, 5]]
+    },
+    "neck": {
+      "pitch": [[0, -3, "inOutSine"], [8, -8, "inQuad"], [11, -2, "outQuad"], [44, -3]]
+    },
+    "head": {
+      "pitch": [[0, -1, "inOutSine"], [7, -18, "inQuad"], [11, -12, "outQuad"], [19, 2, "inOutSine"], [28, 8, "outQuad"], [32, -10, "inOutSine"], [44, -1]]
+    },
+    "upperArm.L": {
+      "pitch": [[0, 4, "inOutSine"], [8, -50, "inQuad"], [10, 40, "linear"], [12, 150, "outQuad"], [19, 120, "inOutSine"], [27, 40, "outQuad"], [32, 25, "inOutSine"], [44, 4]],
+      "roll": [[0, 12, "inOutSine"], [8, 16, "inQuad"], [12, 28, "outQuad"], [19, 32, "inOutSine"], [27, 40, "outQuad"], [32, 24, "inOutSine"], [44, 12]]
+    },
+    "lowerArm.L": {
+      "bend": [[0, 22, "inOutSine"], [8, 26, "inQuad"], [12, 15, "outQuad"], [19, 35, "inOutSine"], [27, 30, "outQuad"], [32, 45, "inOutSine"], [44, 22]]
+    },
+    "hand.L": {
+      "pitch": [[0, 6, "inOutSine"], [8, -10, "inOutSine"], [12, 15, "inOutSine"], [44, 6, "inOutSine"]]
+    },
+    "upperLeg.L": {
+      "pitch": [[0, 9.7, "inOutSine"], [8, 65.99, "inQuad"], [11, -2, "outQuad"], [19, 48, "inOutSine"], [26, 14, "outQuad"], [29, 2.88, "outQuad"], [32, 47.1, "inOutSine"], [44, 9.7]]
+    },
+    "lowerLeg.L": {
+      "bend": [[0, 19.39, "inOutSine"], [8, 99.99, "inQuad"], [11, 2, "outQuad"], [19, 85, "inOutSine"], [26, 22, "outQuad"], [29, 1.77, "outQuad"], [32, 74.19, "inOutSine"], [44, 19.39]]
+    },
+    "foot.L": {
+      "pitch": [[0, 9.7, "inOutSine"], [8, 49.99, "inQuad"], [11, -38, "outQuad"], [19, 10, "inOutSine"], [26, -18, "outQuad"], [29, 0.88, "outQuad"], [32, 37.1, "inOutSine"], [44, 9.7]]
+    },
+    "toe.L": {
+      "pitch": [[0, 0], [9, 25, "outQuad"], [12, 0], [44, 0]]
+    }
+  },
+  "planted": {
+    "foot.L": [[0, 10], [28, 44]],
+    "foot.R": [[0, 10], [28, 44]]
+  },
+  "events": [
+    [11, "takeoff"],
+    [28, "land"]
+  ]
+}

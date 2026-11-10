@@ -1,0 +1,34 @@
+{
+  "$schemaVersion": 1,
+  "model": "builtin:humanoid",
+  "joints": {
+    "hips": { "joint": "Hips", "role": "hips", "axes": { "pitch": "x", "yaw": "y", "roll": "z" } },
+    "spine": { "joint": "Spine", "role": "spine", "axes": { "pitch": "x", "yaw": "y", "roll": "z" } },
+    "chest": { "joint": "Chest", "role": "chest", "axes": { "pitch": "x", "yaw": "y", "roll": "z" } },
+    "neck": { "joint": "Neck", "role": "neck", "axes": { "pitch": "x", "yaw": "y", "roll": "z" } },
+    "head": { "joint": "Head", "role": "head", "axes": { "pitch": "x", "yaw": "y", "roll": "z" } },
+    "shoulder.L": { "joint": "Shoulder.L", "role": "shoulder", "mirror": "shoulder.R", "axes": { "pitch": "x", "yaw": "y", "roll": "z" } },
+    "upperArm.L": { "joint": "UpperArm.L", "role": "upperArm", "base": { "rz": -90 }, "mirror": "upperArm.R", "axes": { "pitch": "-y", "yaw": "-x", "roll": "z" } },
+    "lowerArm.L": { "joint": "LowerArm.L", "role": "lowerArm", "mirror": "lowerArm.R", "axes": { "bend": "-y" }, "limits": { "bend": [0, 150] } },
+    "hand.L": { "joint": "Hand.L", "role": "hand", "mirror": "hand.R", "axes": { "pitch": "-y", "yaw": "-x", "roll": "z" } },
+    "shoulder.R": { "joint": "Shoulder.R", "role": "shoulder", "mirror": "shoulder.L", "axes": { "pitch": "x", "yaw": "-y", "roll": "-z" } },
+    "upperArm.R": { "joint": "UpperArm.R", "role": "upperArm", "base": { "rz": 90 }, "mirror": "upperArm.L", "axes": { "pitch": "y", "yaw": "-x", "roll": "-z" } },
+    "lowerArm.R": { "joint": "LowerArm.R", "role": "lowerArm", "mirror": "lowerArm.L", "axes": { "bend": "y" }, "limits": { "bend": [0, 150] } },
+    "hand.R": { "joint": "Hand.R", "role": "hand", "mirror": "hand.L", "axes": { "pitch": "y", "yaw": "-x", "roll": "-z" } },
+    "upperLeg.L": { "joint": "UpperLeg.L", "role": "upperLeg", "mirror": "upperLeg.R", "axes": { "pitch": "-x", "yaw": "y", "roll": "z" } },
+    "lowerLeg.L": { "joint": "LowerLeg.L", "role": "lowerLeg", "mirror": "lowerLeg.R", "axes": { "bend": "x" }, "limits": { "bend": [0, 160] } },
+    "foot.L": { "joint": "Foot.L", "role": "foot", "mirror": "foot.R", "axes": { "pitch": "-x", "yaw": "y", "roll": "z" } },
+    "toe.L": { "joint": "Toes.L", "role": "toe", "mirror": "toe.R", "axes": { "pitch": "-x", "yaw": "y", "roll": "z" } },
+    "upperLeg.R": { "joint": "UpperLeg.R", "role": "upperLeg", "mirror": "upperLeg.L", "axes": { "pitch": "-x", "yaw": "-y", "roll": "-z" } },
+    "lowerLeg.R": { "joint": "LowerLeg.R", "role": "lowerLeg", "mirror": "lowerLeg.L", "axes": { "bend": "x" }, "limits": { "bend": [0, 160] } },
+    "foot.R": { "joint": "Foot.R", "role": "foot", "mirror": "foot.L", "axes": { "pitch": "-x", "yaw": "-y", "roll": "-z" } },
+    "toe.R": { "joint": "Toes.R", "role": "toe", "mirror": "toe.L", "axes": { "pitch": "-x", "yaw": "-y", "roll": "-z" } }
+  },
+  "controls": {
+    "foot.L.ik": { "type": "twoBone", "chain": ["upperLeg.L", "lowerLeg.L", "foot.L"], "pole": [0, 0, 1], "mirror": "foot.R.ik" },
+    "foot.R.ik": { "type": "twoBone", "chain": ["upperLeg.R", "lowerLeg.R", "foot.R"], "pole": [0, 0, 1], "mirror": "foot.L.ik" },
+    "hand.L.ik": { "type": "twoBone", "chain": ["upperArm.L", "lowerArm.L", "hand.L"], "pole": [0, 0, -1], "mirror": "hand.R.ik" },
+    "hand.R.ik": { "type": "twoBone", "chain": ["upperArm.R", "lowerArm.R", "hand.R"], "pole": [0, 0, -1], "mirror": "hand.L.ik" }
+  },
+  "contacts": ["foot.L", "foot.R", "toe.L", "toe.R"]
+}

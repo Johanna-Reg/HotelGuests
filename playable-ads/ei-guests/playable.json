@@ -1,0 +1,26 @@
+{
+  "title": "Guests are arriving soon!",
+  "cta": "PLAY NOW",
+  "storeUrl": {
+    "ios": "https://apps.apple.com/app/id0000000000",
+    "android": "https://play.google.com/store/apps/details?id=com.example.eiguests"
+  },
+  "orientation": "portrait",
+  "networks": [
+    "applovin",
+    "unity",
+    "ironsource",
+    "google",
+    "meta",
+    "mintegral",
+    "tiktok"
+  ],
+  "export": {
+    "images": "webp",
+    "audio": "mp3",
+    "meshes": "source"
+  },
+  "assets": {
+    "elric": "models/elric/Elric.glb"
+  }
+}

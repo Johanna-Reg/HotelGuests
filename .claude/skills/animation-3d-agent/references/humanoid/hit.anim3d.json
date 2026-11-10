@@ -1,0 +1,71 @@
+{
+  "$schemaVersion": 1,
+  "rig": "humanoid.rig3d.json",
+  "fps": 30,
+  "length": 22,
+  "loop": false,
+  "footLock": true,
+  "tracks": {
+    "hips": {
+      "pitch": [[0, 0, "outQuad"], [2, -4, "inOutSine"], [8, 1.5, "inOutSine"], [22, 0]],
+      "my": [[0, -0.012, "outQuad"], [3, -0.032, "inOutSine"], [22, -0.012]],
+      "mz": [[0, 0, "outQuad"], [3, -0.035, "inOutSine"], [22, 0]]
+    },
+    "spine": {
+      "pitch": [[0, 3, "outQuad"], [2, -10, "inOutSine"], [8, 6, "inOutSine"], [22, 3]]
+    },
+    "chest": {
+      "pitch": [[0, 5, "outQuad"], [2, -12, "inOutSine"], [9, 7, "inOutSine"], [22, 5]],
+      "yaw": [[0, 0, "outQuad"], [2, 8, "inOutSine"], [22, 0]]
+    },
+    "neck": {
+      "pitch": [[0, -3, "outQuad"], [3, 4, "inOutSine"], [22, -3]]
+    },
+    "head": {
+      "pitch": [[0, -1, "outQuad"], [3, -22, "inOutSine"], [10, 4, "inOutSine"], [22, -1]],
+      "yaw": [[0, 0, "outQuad"], [3, -10, "inOutSine"], [22, 0]]
+    },
+    "upperArm.L": {
+      "pitch": [[0, 4, "outQuad"], [3, 22, "inOutSine"], [22, 4]],
+      "roll": [[0, 12, "outQuad"], [3, 24, "inOutSine"], [22, 12]]
+    },
+    "lowerArm.L": {
+      "bend": [[0, 22, "outQuad"], [4, 38, "inOutSine"], [22, 22]]
+    },
+    "hand.L": {
+      "pitch": [[0, 6, "outQuad"], [4, -12, "inOutSine"], [22, 6]]
+    },
+    "upperArm.R": {
+      "pitch": [[0, 4, "outQuad"], [3, 15.4, "inOutSine"], [22, 4]],
+      "roll": [[0, 12, "outQuad"], [3, 16.8, "inOutSine"], [22, 12]]
+    },
+    "lowerArm.R": {
+      "bend": [[0, 22, "outQuad"], [4, 26.6, "inOutSine"], [22, 22]]
+    },
+    "hand.R": {
+      "pitch": [[0, 6, "outQuad"], [4, -12, "inOutSine"], [22, 6]]
+    },
+    "upperLeg.L": {
+      "pitch": [[0, 9.7]]
+    },
+    "lowerLeg.L": {
+      "bend": [[0, 19.39]]
+    },
+    "foot.L": {
+      "pitch": [[0, 9.7]]
+    },
+    "upperLeg.R": {
+      "pitch": [[0, 9.7]]
+    },
+    "lowerLeg.R": {
+      "bend": [[0, 19.39]]
+    },
+    "foot.R": {
+      "pitch": [[0, 9.7]]
+    }
+  },
+  "planted": {
+    "foot.L": [[0, 22]],
+    "foot.R": [[0, 22]]
+  }
+}

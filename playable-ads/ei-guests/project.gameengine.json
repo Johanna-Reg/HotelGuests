@@ -1,0 +1,43 @@
+{
+  "$schemaVersion": 2,
+  "name": "EIGuests ei-guests (playable ad)",
+  "playable": {
+    "game": "../.."
+  },
+  "js": {
+    "entry": "src/main.ts",
+    "target": "es2020"
+  },
+  "render": {
+    "defaultTier": "auto",
+    "tiers": {
+      "mobile": {
+        "msaa": 1,
+        "hdr": false
+      },
+      "compat": {
+        "msaa": 1,
+        "hdr": false
+      }
+    },
+    "clearColor": [
+      0.1,
+      0.13,
+      0.22,
+      1
+    ],
+    "sortingLayers": [
+      "Default"
+    ],
+    "pixelsPerUnit": 100
+  },
+  "ui": {
+    "referenceResolution": [
+      1080,
+      1920
+    ],
+    "orientation": "portrait"
+  },
+  "targets": [],
+  "startScene": "scenes/main.scene.json"
+}

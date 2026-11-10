@@ -1,0 +1,70 @@
+{
+  "$schemaVersion": 1,
+  "rig": "humanoid.rig3d.json",
+  "fps": 30,
+  "length": 26,
+  "loop": false,
+  "footLock": true,
+  "tracks": {
+    "hips": {
+      "yaw": [[0, 0, "inOutSine"], [6, -5, "linear"], [9, 7, "outQuad"], [11, 8, "inOutSine"], [26, 0]],
+      "my": [[0, -0.042]]
+    },
+    "spine": {
+      "pitch": [[0, 6, "inOutSine"], [6, 4, "linear"], [9, 12, "outQuad"], [26, 6]],
+      "yaw": [[0, 0, "inOutSine"], [6, -4, "linear"], [9, 5, "outQuad"], [11, 6, "inOutSine"], [26, 0]]
+    },
+    "chest": {
+      "yaw": [[0, 0, "inOutSine"], [6, -6, "linear"], [9, 8, "outQuad"], [11, 9, "inOutSine"], [26, 0]]
+    },
+    "head": {
+      "pitch": [[0, -6, "inOutSine"], [9, -12, "inOutSine"], [26, -6]],
+      "yaw": [[0, 0, "inOutSine"], [6, 5, "linear"], [9, -10, "outQuad"], [11, -11, "inOutSine"], [26, 0]]
+    },
+    "upperArm.L": {
+      "pitch": [[0, 38, "inOutSine"], [9, 30, "inOutSine"], [26, 38]],
+      "roll": [[0, 22]]
+    },
+    "lowerArm.L": {
+      "bend": [[0, 128, "inOutSine"], [9, 135, "inOutSine"], [26, 128]]
+    },
+    "upperArm.R": {
+      "pitch": [[0, 38, "inOutSine"], [6, 28, "linear"], [9, 88, "outQuad"], [11, 90, "inOutSine"], [26, 38]],
+      "yaw": [[0, 0, "inOutSine"], [6, -10, "linear"], [9, 0, "outQuad"], [26, 0]],
+      "roll": [[0, 22, "inOutSine"], [6, 30, "linear"], [9, 0, "outQuad"], [11, -1, "inOutSine"], [26, 22]]
+    },
+    "lowerArm.R": {
+      "bend": [[0, 128, "inOutSine"], [6, 140, "linear"], [9, 6, "outQuad"], [11, 4, "inOutSine"], [26, 128]]
+    },
+    "hand.R": {
+      "pitch": [[0, 0]]
+    },
+    "upperLeg.L": {
+      "pitch": [[0, 18.19]],
+      "yaw": [[0, 0, "inOutSine"], [6, 5, "linear"], [9, -7, "outQuad"], [11, -8, "inOutSine"], [26, 0]]
+    },
+    "lowerLeg.L": {
+      "bend": [[0, 36.39]]
+    },
+    "foot.L": {
+      "pitch": [[0, 18.19]]
+    },
+    "upperLeg.R": {
+      "pitch": [[0, 18.19]],
+      "yaw": [[0, 0, "inOutSine"], [6, -5, "linear"], [9, 7, "outQuad"], [11, 8, "inOutSine"], [26, 0]]
+    },
+    "lowerLeg.R": {
+      "bend": [[0, 36.39]]
+    },
+    "foot.R": {
+      "pitch": [[0, 18.19]]
+    }
+  },
+  "planted": {
+    "foot.L": [[0, 26]],
+    "foot.R": [[0, 26]]
+  },
+  "events": [
+    [9, "hit"]
+  ]
+}

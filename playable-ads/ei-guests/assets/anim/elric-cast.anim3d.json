@@ -1,0 +1,44 @@
+{
+  "$schemaVersion": 1,
+  "rig": "elric.rig3d.json",
+  "fps": 30,
+  "length": 30,
+  "loop": false,
+  "tracks": {
+    "hips": {
+      "y": [[0, 0], [7, -0.06, "outQuad"], [13, 0.03, "outBack"], [30, 0, "inOutSine"]]
+    },
+    "spine": {
+      "pitch": [[0, 0], [7, 12, "outQuad"], [13, -10, "outBack"], [30, 0, "inOutSine"]]
+    },
+    "hip.R": {
+      "pitch": [[0, 0], [7, 14, "outQuad"], [13, 0, "outQuad"]]
+    },
+    "hip.L": {
+      "pitch": [[0, 0], [7, 14, "outQuad"], [13, 0, "outQuad"]]
+    },
+    "lowerLeg.R": {
+      "bend": [[0, 0], [7, 25, "outQuad"], [13, 0, "outQuad"]]
+    },
+    "lowerLeg.L": {
+      "bend": [[0, 0], [7, 25, "outQuad"], [13, 0, "outQuad"]]
+    },
+    "head": {
+      "pitch": [[0, 0], [13, -15, "outQuad"], [30, 0, "inOutSine"]]
+    },
+    "shoulder.R": {
+      "pitch": [[0, 0], [7, -20, "outQuad"], [13, 120, "outBack"], [22, 125], [30, 0, "inOutSine"]],
+      "roll": [[0, 0], [13, 55, "outBack"], [22, 50], [30, 0, "inOutSine"]]
+    },
+    "shoulder.L": {
+      "pitch": [[0, 0], [7, -20, "outQuad"], [13, 120, "outBack"], [22, 125], [30, 0, "inOutSine"]],
+      "roll": [[0, 0], [13, 55, "outBack"], [22, 50], [30, 0, "inOutSine"]]
+    },
+    "lowerArm.R": {
+      "bend": [[0, 0], [7, 60, "outQuad"], [13, 10, "outQuad"], [30, 0, "inOutSine"]]
+    },
+    "lowerArm.L": {
+      "bend": [[0, 0], [7, 60, "outQuad"], [13, 10, "outQuad"], [30, 0, "inOutSine"]]
+    }
+  }
+}
